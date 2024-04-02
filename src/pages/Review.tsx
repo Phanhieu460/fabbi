@@ -1,11 +1,9 @@
 import { Flex, Typography } from 'antd'
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const { Title } = Typography
 
 const Review = () => {
-    const dispatch = useDispatch()
     const data = useSelector((state: any) => state.order)
     return (
         <div style={{ padding: '4px' }}>

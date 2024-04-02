@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { Button, InputNumber, notification, Select, Typography } from 'antd';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Flex, InputNumber, notification, Select, Typography } from 'antd';
 import dishData from '../data/dishes.json';
 import { addDish } from '../redux/actions';
 

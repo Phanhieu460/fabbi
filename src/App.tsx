@@ -1,11 +1,11 @@
-import './App.css';
+import { Button, notification, Steps, theme } from 'antd';
 import React, { useState } from 'react';
-import { Button, message, notification, Steps, theme } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import './App.css';
+import Dish from './pages/Dish';
 import MealCategory from './pages/MealCategory';
 import Restaurant from './pages/Restaurant';
-import Dish from './pages/Dish';
 import Review from './pages/Review';
-import { useDispatch, useSelector } from 'react-redux';
 import { nextStep, resetState } from './redux/actions';
 
 function App() {
@@ -28,7 +28,6 @@ function App() {
     },
   ];
   const { token } = theme.useToken();
-  const [current, setCurrent] = useState(0);
   const data = useSelector((state: any) => state.order);
   const dispatch = useDispatch()
   const next = () => {

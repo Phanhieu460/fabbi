@@ -1,4 +1,4 @@
-import { Flex, InputNumber, Select, Typography } from 'antd';
+import { InputNumber, Select, Typography } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { addMeal, addPerson } from '../redux/actions';
 
